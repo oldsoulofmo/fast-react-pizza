@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import CartOverview from "../features/cart/CartOverview";
 import Header from "./Header";
 
@@ -7,12 +8,7 @@ function AppLayout() {
       <Header />
 
       <main>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam eius
-          possimus rerum sed reprehenderit officiis nemo harum fugiat, dolor
-          adipisci ducimus cum odit, labore, illum fuga iste distinctio quae
-          repellat.
-        </h1>
+        <Outlet />
       </main>
       <CartOverview />
     </div>
